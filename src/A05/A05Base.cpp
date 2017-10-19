@@ -2,6 +2,8 @@
 #include <SDL_image.h> 
 #include <SDL_ttf.h>
 #include <SDL_mixer.h>
+#include <iostream>
+#include <time.h>
 
 //Game general information
 #define SCREEN_WIDTH 800
@@ -9,6 +11,11 @@
 #define FPS 60
 
 int main(int, char*[]) {
+
+	//Time
+	float deltaTime = 0;
+	clock_t lastTime = clock();
+	float timeDown = 10.;
 
 	// --- INIT ---
 	if (SDL_Init(SDL_INIT_EVERYTHING) != 0) throw "No es pot inicialitzar SDL subsystems";
@@ -110,6 +117,10 @@ int main(int, char*[]) {
 		}
 
 		// UPDATE
+		deltaTime = (clock() - lastTime);
+		lastTime = clock();
+		deltaTime /= CLOCKS_PER_SEC;
+		timeDown -= deltaTime;
 
 		//Animació del Sprite
 		frameTime++;
