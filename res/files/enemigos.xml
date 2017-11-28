@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<libreriaEnemigos>
+
+	<enemigo nombre="slime">
+		<vitalidad>100</vitalidad>
+		<danyoAtaque>25</danyoAtaque>
+		<defensa>10</defensa>
+		<frequenciaAtaque>2</frequenciaAtaque>
+		<experiencia>50</experiencia>
+	</enemigo>
+	
+	<enemigo nombre="roca">
+		<vitalidad>200</vitalidad>
+		<danyoAtaque>10</danyoAtaque>
+		<defensa>100</defensa>
+		<frequenciaAtaque>0.5</frequenciaAtaque>
+		<experiencia>75</experiencia>
+	</enemigo>
+	
+	<enemigo nombre="mago">
+		<vitalidad>50</vitalidad>
+		<danyoAtaque>100</danyoAtaque>
+		<defensa>5</defensa>
+		<frequenciaAtaque>3</frequenciaAtaque>
+		<experiencia>200</experiencia>
+	</enemigo>
+	
+	<enemigo nombre="soldado">
+		<vitalidad>250</vitalidad>
+		<danyoAtaque>50</danyoAtaque>
+		<defensa>150</defensa>
+		<frequenciaAtaque>3</frequenciaAtaque>
+		<experiencia>500</experiencia>
+	</enemigo>
+	
+</libreriaEnemigos>
