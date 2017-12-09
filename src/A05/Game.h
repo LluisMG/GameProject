@@ -1,0 +1,18 @@
+#pragma once
+
+#include "SceneMenu.h"
+#include "ScenePlay.h"
+
+enum class GAMESTATE { MENU, PLAY, EXIT };
+
+class Game
+ {
+	public:
+		Game();
+		
+			Scene *currentScene;
+		GAMESTATE gameState;
+		
+			void Run();
+		~Game();
+		};
