@@ -5,7 +5,7 @@ enum class SCENESTATE { RUNNING, GOTO, EXIT };
 
 class Scene {
 protected:
-
+	bool isMuted;
 	Scene();
 	SCENESTATE sceneState;
 
