@@ -1,9 +1,7 @@
 #pragma once
 #include "Scene.h"
 
-class ScenePlay :
-	public Scene
-	 {
+class ScenePlay : public Scene {
 	public:
 		ScenePlay();
 		

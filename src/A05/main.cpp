@@ -7,11 +7,27 @@
 #include <SDL_image.h>
 #include <SDL_ttf.h>
 #include <stack>   
+#include "Renderer.h"
 
 
 int main() {
 
-	//estic avançant mes a part, sisplau contactam amb lo que haguis fet tu
+	bool quit = false;
+	SDL_Event event;
+	int this_tick = 0;
+	int next_tick = 1000/SCREEN_FPS;
+
+	Scene *curr_scene = new SceneMenu;
+
+	while (!quit) {
+		this_tick = SDL_GetTicks();
+		if (this_tick < next_tick) {
+
+			SDL_Delay(next_tick - this_tick);
+		}
+		next_tick = this_tick + (1000 / SCREEN_FPS);
+		event = game->run(curr_scene);
+	}
 
 	return 0;
 }

@@ -2,8 +2,15 @@
 #include "Scene.h"
 
 class SceneMenu : public Scene {
-
+	public :
 	SceneMenu();
+	~SceneMenu();
+
+	void EventHandler();
+	void Update(float dtime);
+	void Draw();
+	void MuteGame();
+
 
 	//text button play level1
 	//rect button play level1
@@ -20,11 +27,5 @@ class SceneMenu : public Scene {
 	//text button mute
 	//rect button mute
 
-	void EventHandle();
-	void Update();
-	void Draw();
-	void MuteGame();
-
-	~SceneMenu();
 
 };
